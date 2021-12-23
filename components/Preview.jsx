@@ -4,10 +4,13 @@ import { useDrop } from "react-dnd";
 import { DRAG_TYPES } from "../constants/DragTypes";
 import { useComponents } from "../contexts/ComponentsContext";
 import ComponentName from "../components/ComponentName";
+import Photo from "../components/Photo";
+import Title from "./Title";
+import Text from "./Text";
 import PreviewContainer from "./PreviewContainer";
 
 const PreviewComponents = {
-  ComponentName,
+  ComponentName, Photo, Title, Text
 };
 
 export default function Preview() {
@@ -67,7 +70,7 @@ export default function Preview() {
   return (
     <Box
       ref={drop}
-      width="400px"
+      width="900px"
       height="100vh"
       sx={{ border: "1px solid black" }}
     >
