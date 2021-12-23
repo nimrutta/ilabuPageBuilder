@@ -12,9 +12,13 @@ export default function DraggableComponent({ ...props }) {
       ref={drag}
       width={100}
       height={100}
-      bg="black"
+      bg="hsl(184deg 15% 58%)"
       color="white"
+      display={'flex'}
+      justifyContent={'center'}
+      alignItems={'center'}
       {...props}
+      style={{borderRadius: 7}}
     >
       Component Name
     </Box>
